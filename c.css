@@ -1,0 +1,918 @@
+* {
+  --c1: rgb(72, 172, 132);
+  --c2: rgb(244, 244, 250);
+  --c3: rgb(227, 227, 236);
+  --s: 33px font-family: 'Work Sans';
+
+  box-sizing: border-box;
+}
+
+.dad {
+
+
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 75px 433px;
+  grid-template-areas: "d1 " "d2 " "d3 " "d4 " "d5 " "d7 " "d8 " "d9 " "d10 ";
+
+}
+
+.dad1 {
+  
+  
+  grid-area: d1;
+  width: 375px;
+  height: 75px;
+  margin-left: calc((100% - 375px)/2);
+  background-color: white;
+  position: relative;
+
+
+}
+
+.one {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 12.5px;
+  left: 12.5px;
+
+
+
+}
+
+.two {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 12.5px;
+  right: 20px;
+  overflow: hidden;
+
+}
+
+.two:hover {
+  overflow: visible;
+}
+
+.lines {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.line-1 {
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+
+}
+
+.line-2 {
+  width: 25px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 20px;
+
+
+}
+
+.line-2:hover {
+  width: 50px;
+}
+
+.line-3 {
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 30px;
+
+}
+
+.display {
+
+  width: 100px;
+  height: 200px;
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  z-index: 2;
+
+
+}
+
+li {
+  width: 95px;
+  height: 45px;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 16px;
+  list-style-type: none;
+  background-color: rgb(242, 242, 247);
+  border: 1px white solid;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/*22222222222222222222222222222222222*/
+.dad2 {
+  
+  grid-area: d2;
+  width: 375px;
+  height: 433px;
+  margin-left: calc((100% - 375px)/2);
+  position: relative;
+
+}
+
+.dad2>img {
+  
+  width: 375px;
+  height: 433px;
+  filter: grayscale(100%);
+}
+
+.dad2>.word1 {
+  color: var(--c1);
+  font-weight: 700;
+  font-size: xx-large;
+  text-transform: capitalize;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+
+}
+
+.dad2>.word2 {
+
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+
+}
+
+/*33333333333333333333333333333*/
+.dad3 {
+  width: 375px;
+  height: 254px;
+  background-color: var(--c2);
+  grid-area: d3;
+  position: relative;
+  margin-left: calc((100% - 375px)/2);
+  
+}
+
+.onee {
+  position: absolute;
+  left: 187px;
+  top: 60px;
+  transform: scale(.25, .25);
+}
+
+
+
+.threee {
+  width: 3px;
+  border-left: 15px transparent solid;
+  border-right: 15px transparent solid;
+  border-top: 15px var(--c1) solid;
+  border-bottom: 15px transparent solid;
+  position: absolute;
+  top: 10px;
+
+}
+
+.foure {
+  width: 3px;
+  border-left: 15px transparent solid;
+  border-right: 15px transparent solid;
+  border-top: 15px transparent solid;
+  border-bottom: 15px var(--c1) solid;
+  position: absolute;
+  top: -10px;
+
+}
+
+.twoe {
+  position: absolute;
+  left: 170px;
+  top: 60px;
+  transform: scale(.4, .4);
+}
+
+.threeo {
+  position: absolute;
+  left: 195px;
+  top: 80px;
+  transform: scale(.4, .4);
+
+}
+
+.dad3 .four {
+  position: absolute;
+  left: 165px;
+  top: 90px;
+
+  transform: scale(.5, .5) rotate(-35deg);
+
+}
+
+.dad3 .four .one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 20px;
+  background-color: var(--c1);
+  border-radius: 3px;
+
+
+}
+
+.dad3 .four .two {
+  position: absolute;
+  top: 5px;
+  left: 77px;
+  width: 15px;
+  height: 10px;
+  background-color: white;
+
+
+
+}
+
+.five-word {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 130px;
+  left: 120px;
+}
+
+.six-word {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 180px;
+  left: 40px;
+
+}
+
+/*444444444444444444444444444444444*/
+.dad4 {
+  width: 375px;
+  height: 254px;
+  background-color: var(--c2);
+  grid-area: d4;
+  position: relative;
+  margin-left: calc((100% - 375px)/2);
+  
+}
+
+.dad4-1 {
+  position: absolute;
+  color: var(--c1);
+  top: 60px;
+  left: 160px;
+  
+
+}
+
+.dad4-2 {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 110px;
+  left: 100px;
+}
+
+.dad4-3 {
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 60px;
+
+}
+
+/*55555555555555555555555555*/
+.dad5 {
+  width: 375px;
+  height: 254px;
+  background-color: var(--c2);
+  grid-area: d5;
+  position: relative;
+  margin-left: calc((100% - 375px)/2);
+  
+}
+
+.dad5-1 {
+  position: absolute;
+  color: var(--c1);
+  top: 60px;
+  left: 160px;
+  transform: scale(2, 2);
+
+}
+
+.dad5-2 {
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 110px;
+  left: 100px;
+}
+
+.dad5-3 {
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  left: 60px;
+
+}
+
+/*666666666666666666666666666666666*/
+.dad7 {
+  width: 375px;
+  height: 1000px;
+  background-color: white;
+  grid-area: d7;
+  position: relative;
+  margin-left: calc((100% - 375px)/2);
+  
+
+
+}
+
+.ser-1 {
+  position: relative;
+  top: -10px
+}
+
+#dad7--2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 55px;
+  color: var(--c2);
+  position: absolute;
+  top: 39px;
+  left: 90px;
+
+
+}
+
+.dad7--1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 19px;
+
+  position: absolute;
+  top: 85px;
+  left: 69px;
+  text-transform: capitalize;
+
+}
+
+.ser1 {
+  position: relative;
+}
+
+.dad7-1 {
+  color: var(--c1);
+  position: absolute;
+  top: 185px;
+  left: 173px;
+  transform: scale(2);
+}
+
+.dad7-2 {
+  position: absolute;
+  top: 229px;
+  left: 136px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.dad7-3 {
+  position: absolute;
+  top: 250px;
+  left: 47px;
+  text-transform: capitalize;
+  font-weight: 200;
+  font-size: 13px;
+  text-align: center;
+
+
+}
+
+.ser2 {
+  position: relative;
+}
+
+.dad7-4 {
+  color: var(--c1);
+  position: absolute;
+  left: 175px;
+  top: 364px;
+  transform: scale(2);
+
+}
+
+.dad7-5 {
+  position: absolute;
+  top: 409px;
+  left: 158px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+
+
+}
+
+.dad7-6 {
+  position: absolute;
+  top: 444px;
+  left: 55px;
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+}
+
+.ser3 {
+  position: relative;
+}
+
+.ser3-1 {
+
+  position: relative;
+
+}
+
+.dad7-7-1 {
+
+  width: 50px;
+  height: 50px;
+  border: 5px var(--c1) solid;
+  position: absolute;
+  top: 549px;
+  left: 156px;
+}
+
+.dad7-7-2 {
+
+  width: 10px;
+  height: 10px;
+  border: 3px var(--c1) solid;
+  background-color: white;
+  position: absolute;
+  top: 547px;
+  left: 154px;
+}
+
+.dad7-7-3 {
+
+  width: 10px;
+  height: 10px;
+  border: 3px var(--c1) solid;
+  background-color: white;
+  position: absolute;
+  top: 591px;
+  left: 154px;
+}
+
+.dad7-7-4 {
+
+  width: 10px;
+  height: 10px;
+  border: 3px var(--c1) solid;
+  background-color: white;
+  position: absolute;
+  top: 548px;
+  left: 197px;
+}
+
+.dad7-7-5 {
+
+  width: 10px;
+  height: 10px;
+  border: 3px var(--c1) solid;
+  background-color: white;
+  position: absolute;
+  top: 591px;
+  left: 197px;
+}
+
+.ser3-2 {
+  position: absolute;
+  top: 626px;
+  left: 146px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+}
+
+.ser3-3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 13px;
+
+  position: absolute;
+  top: 653px;
+  left: 40px;
+  text-transform: capitalize;
+}
+
+.ser4 {
+  position: relative;
+}
+
+.ser4-1 {
+  position: absolute;
+  top: 734px;
+  left: 167px;
+  color: var(--c1);
+
+}
+
+.ser4-2 {
+  position: absolute;
+  top: 767px;
+  left: 120px;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  text-transform: capitalize;
+
+}
+
+.ser4-3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 13px;
+
+  position: absolute;
+  top: 807px;
+  left: 51px;
+  text-transform: capitalize;
+}
+
+/*88888888888888888888888888888888*/
+.dad8 {
+  grid-area: d8;
+  width: 375px;
+  height: 1130px;
+  background-color: var(--c2);
+  position: relative;
+  left: calc((100% - 375px)/2);
+  
+}
+
+.por-1 {
+  position: relative;
+
+}
+
+#dad8--2 {
+  text-align: center;
+  color: var(--c3);
+  font-weight: 700;
+  font-size: 55px;
+  position: absolute;
+  top: 33px;
+  left: 85px;
+
+}
+
+
+.dad8--1 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 80px;
+  left: 52px;
+
+
+}
+
+.po1 {
+  position: relative;
+}
+
+
+.dad8-1 {
+
+  width: 355px;
+  height: 170px;
+
+  position: absolute;
+  top: 154px;
+  left: 10px;
+}
+
+.dad823 {
+  width: 355px;
+  height: 135px;
+  background-color: white;
+  position: relative;
+  top: 323px;
+  left: 10px;
+}
+
+.dad8-2 {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 21px;
+  left: 14px;
+}
+
+.dad8-3 {
+  font-weight: 200;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 14px;
+}
+
+.por2 {
+  position: relative;
+}
+
+.dad8-4 {
+  width: 355px;
+  height: 170px;
+  position: absolute;
+  top: 319px;
+  left: 10px;
+}
+
+.dad856 {
+  width: 355px;
+  height: 135px;
+  background-color: white;
+  position: relative;
+  top: 493px;
+  left: 10px;
+}
+
+.dad8-5 {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 21px;
+  left: 14px;
+}
+
+.dad8-6 {
+  font-weight: 200;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 14px;
+}
+
+
+
+.por3 {
+  position: relative;
+}
+
+.dad8-7 {
+  width: 355px;
+  height: 170px;
+  position: absolute;
+  top: 488px;
+  left: 10px;
+}
+
+.dad889 {
+  width: 355px;
+  height: 135px;
+  background-color: white;
+  position: relative;
+  top: 662px;
+  left: 10px;
+}
+
+.dad8-8 {
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 21px;
+  left: 14px;
+}
+
+.dad8-9 {
+  font-weight: 200;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 14px;
+}
+
+/*9999999999999999999999999999*/
+.dad9 {
+  width: 375px;
+  height: 890px;
+  grid-area: d9;
+  position: relative;
+  left: calc((100% - 375px)/2);
+  
+}
+
+.about1 {
+  position: relative;
+}
+
+#dad9--2 {
+  text-align: center;
+  color: var(--c2);
+  font-weight: 700;
+  font-size: 55px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 40px;
+  left: 107px;
+
+}
+
+.dad9--1 {
+
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 88px;
+  left: 109px;
+}
+
+.about2 {
+  position: relative;
+}
+
+.dad9-1 {
+  width: 175px;
+  height: 250px;
+  position: absolute;
+  top: 185px;
+  left: 100px;
+
+}
+
+.about3 {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 499px;
+  left: 61px;
+
+}
+
+.about4 {
+  position: relative;
+}
+
+
+.dad9-2 {
+  width: 125px;
+  height: 2px;
+  background-color: var(--c1);
+  position: absolute;
+  top: 646px;
+  left: 125px;
+}
+
+.about5 {
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  top: 672px;
+  left: 61px;
+}
+
+/*10 10 10 1010 10 10*/
+.dad10 {
+
+  width: 375px;
+  height: 408px;
+  background-color: var(--c2);
+  grid-area: d10;
+  left: calc((100% - 375px)/2);
+  position: relative;
+  
+}
+
+#dad10-1 {
+  text-align: center;
+  color: var(--c3);
+  font-weight: 700;
+  font-size: 55px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 40px;
+  left: 93px;
+
+}
+
+.dad10-2 {
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 88px;
+  left: 109px;
+}
+
+.dad10-3 {
+  font-weight: 700;
+  font-size: 17px;
+  position: absolute;
+  top: 179px;
+  left: 90px;
+}
+
+.dad10-5 {
+  font-weight: 700;
+  font-size: 17px;
+  position: absolute;
+  top: 256px;
+  left: 74px;
+}
+
+
+.dad10-4 {
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 212px;
+  left: 99px;
+  color: var(--c1);
+
+}
+.dad10-6{
+  width: 375px;
+  height: 50px;
+  background-color: rgb(55, 88, 88);
+  color: white;
+  position: relative;
+  top:357px;
+  left:0px;
+}
+.leon{
+  position: absolute;
+  top:16px ;
+  left: 145px;
+  color: var(--c1);
+}
+.leon1{
+  position: absolute;
+  top:16px ;
+  left: 91px;
+}
+.leon2{text-transform: capitalize;
+  position: absolute;
+  top:16px ;
+  left: 182px;
+}
+
+/*media query*/
+
+
+@media screen and (min-width:600px) and (max-width:800px)
+{.dad{transform: scaleX(1.6);}
+margin-left: calc((100% - 600px)/2);}
